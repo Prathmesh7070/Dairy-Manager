@@ -1,0 +1,102 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2d5016 0%, #1a3009 100%);
+  padding: 2rem;
+}
+
+.login-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.login-title-marathi {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d5016;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.login-title-english {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+}
+
+.login-subtitle {
+  font-size: 0.875rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, #2d5016 0%, #3a6b1f 100%);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #234010 0%, #2d5016 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(45, 80, 22, 0.3);
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  padding: 0.75rem;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  color: #dc2626;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.login-hint {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f3f4f6;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.login-hint p {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin: 0.25rem 0;
+}
+
+.login-hint strong {
+  color: #2d5016;
+}

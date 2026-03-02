@@ -1,0 +1,170 @@
+.bill-container {
+  padding: 2rem;
+}
+
+.bill-form {
+  margin-top: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bill-output {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  margin-top: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bill-header {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #2d5016;
+  margin-bottom: 1.5rem;
+}
+
+.bill-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2d5016;
+  margin-bottom: 0.5rem;
+}
+
+.bill-header h2 {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.bill-header h3 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-top: 0.75rem;
+}
+
+.bill-info {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.bill-section {
+  margin-bottom: 2rem;
+}
+
+.bill-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+.bill-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.total-row {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.bill-summary {
+  background: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+}
+
+.summary-row.grand-total {
+  border-top: 2px solid #2d5016;
+  margin-top: 0.75rem;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.summary-row.grand-total strong {
+  color: #2d5016;
+  font-size: 1.5rem;
+}
+
+.deduction {
+  color: #dc2626;
+}
+
+.bill-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Print styles */
+@media print {
+
+  body * {
+    visibility: hidden;
+  }
+
+  .bill-output,
+  .bill-output * {
+    visibility: visible;
+  }
+
+  .bill-output {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: none;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+}

@@ -1,0 +1,56 @@
+.rate-chart-container {
+  padding: 2rem;
+}
+
+.rate-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.rate-table th {
+  background: #2d5016;
+  color: white;
+  padding: 0.875rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.rate-table td {
+  padding: 0.875rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.fat-cell {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.rate-cell {
+  background: white;
+}
+
+.rate-cell:hover {
+  background: #f9fafb;
+}
+
+.rate-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16a34a;
+  margin-bottom: 0.25rem;
+}
+
+.degree-value {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
